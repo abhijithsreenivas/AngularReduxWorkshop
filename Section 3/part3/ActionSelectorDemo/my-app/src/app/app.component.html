@@ -1,0 +1,8 @@
+<div class="card">
+  <h1> NGX action and selector DEMO</h1>
+  <input type="text" [(ngModel)]="newProduct"/>
+  <button (click)="create()">Save</button>
+  <div *ngFor="let product of products$ | async">
+    {{product.title}}
+  </div>
+</div>
